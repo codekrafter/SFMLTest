@@ -4,7 +4,7 @@
 #include "Object.cpp"
 
     Character::Character() {
-        sprite = sf::RectangleShape(sf::Vector2f(50,50));
+        sprite = sf::RectangleShape(sf::Vector2f(25,25));
 
         sprite.setFillColor(sf::Color::Green);
         sprite.setPosition(0,0);

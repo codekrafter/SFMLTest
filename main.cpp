@@ -12,14 +12,14 @@ void ckprint(std::string m, float f)
 int main()
 {
     sf::RenderWindow window(sf::VideoMode(500, 500), "Game Engine");
-    sf::RectangleShape shape(sf::Vector2f(100,100));
+    sf::RectangleShape shape(sf::Vector2f(25,25));
     sf::Vector2f pos(0,0);
     Character character = Character();
-    Map map = Map(500,500,50,50);
+    Map map = Map(500,500,25,25);
 
     shape.setFillColor(sf::Color::Green);
     shape.setPosition(pos);
-    ckprint("", 0 % 2);
+    //ckprint("", 0 % 2);
     while (window.isOpen())
     {
         sf::Event event;
@@ -34,16 +34,16 @@ int main()
                switch (event.key.code)
                 {
                     case 73:
-                        pos.y = pos.y - 50;
+                        pos.y = pos.y - 25;
                         break;
                     case 74:
-                        pos.y = pos.y + 50;
+                        pos.y = pos.y + 25;
                         break;
                     case 71:
-                        pos.x = pos.x - 50;
+                        pos.x = pos.x - 25;
                         break;
                     case 72:
-                        pos.x = pos.x + 50;
+                        pos.x = pos.x + 25;
                         break;
                 }
 
